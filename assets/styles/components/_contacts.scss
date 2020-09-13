@@ -1,0 +1,38 @@
+.contacts {
+  display: inline-grid;
+  grid-template-columns: 1fr auto;
+  grid-gap: 16px 14px;
+
+  .title {
+    grid-column: 1;
+    font-size: 14px;
+    line-height: 1.1;
+    color: $c-white;
+  }
+
+  .phone {
+    grid-column: 2;
+    font-size: 14px;
+    line-height: 1.1;
+    color: $c-white;
+    transition: $transition;
+
+    &:focus,
+    &:hover {
+      color: $c-yellow;
+    }
+  }
+
+  .email {
+    grid-column: 2;
+    font-size: 14px;
+    line-height: 1.1;
+    color: $c-yellow;
+    transition: $transition;
+
+    &:focus,
+    &:hover {
+      color: $c-white;
+    }
+  }
+}

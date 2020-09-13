@@ -1,0 +1,46 @@
+.lang-switch {
+  display: flex;
+  align-items: center;
+
+  &__parent {
+    position: relative;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    padding: 8px 0 8px 16px;
+    border-radius: 8px;
+    color: $c-white;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0.25px;
+    transition: $transition;
+
+    &:focus {
+      + .lang-switch__submenu {
+        display: flex;
+      }
+    }
+  }
+
+  &__submenu {
+    display: none;
+    padding: 8px 0 0;
+    position: absolute;
+    left: 10px;
+    box-shadow: $shadow;
+    border-radius: 8px;
+    background-color: $c-white;
+    flex-direction: column;
+
+    .lang-switch__link {
+      padding: 8px 16px;
+      color: $c-black;
+
+      &:hover {
+        color: $c-yellow;
+      }
+    }
+  }
+}

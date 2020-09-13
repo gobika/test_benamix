@@ -1,0 +1,65 @@
+[class^='btn-'],
+[class*=' btn-'],
+button {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: $transition;
+}
+
+.btn-main {
+  padding: 20px 28px;
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 1;
+  color: $c-black;
+  text-transform: uppercase;
+  background: $c-yellow;
+  transition: $transition;
+
+  &:focus,
+  &:hover {
+    color: $c-white;
+    background: $c-orange;
+  }
+}
+
+.btn-remove {
+  position: relative;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-bottom: 6px;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    width: 20px;
+    height: 1px;
+    background: $c-yellow;
+  }
+
+  &::before {
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+
+  &::after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+}
+
+.btn-edit {
+  font-size: 10px;
+  letter-spacing: 0.75px;
+  color: $c-grey;
+  text-transform: uppercase;
+}

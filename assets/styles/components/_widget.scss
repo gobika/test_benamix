@@ -1,0 +1,43 @@
+.widget {
+  background: $c-white;
+  margin-bottom: 30px;
+  padding: 30px 30px 28px;
+
+  &__title {
+    font-size: 24px;
+    font-weight: 900;
+    font-style: italic;
+    color: $c-black;
+    margin-bottom: 22px;
+  }
+
+  &__content {
+    margin-bottom: 12px;
+  }
+
+  &__link {
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 900;
+    font-style: italic;
+    color: $c-black;
+    transition: $transition;
+
+    &::after {
+      content: ' →';
+      transform: translateX(0);
+      transition: $transition;
+    }
+
+    &:focus,
+    &:hover {
+      color: lighten($c-black, 30%);
+
+      &::after {
+        transform: translateX(4px);
+      }
+    }
+  }
+}

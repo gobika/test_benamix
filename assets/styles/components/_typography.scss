@@ -1,0 +1,41 @@
+h1, h2, h3, h4, h5 {
+  margin: initial;
+}
+
+.h1 {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: normal;
+  color: $c-grey;
+}
+
+.h2 {
+  @include h2;
+}
+
+.h3 {
+  @include h3;
+}
+
+.h4 {
+  @include h4;
+}
+
+.h5 {
+  @include h5;
+}
+
+.text {
+  @include text;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+

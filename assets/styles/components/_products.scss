@@ -1,0 +1,27 @@
+.products {
+  padding: 30px 0;
+
+  &__title {
+    font-size: 18px;
+    font-weight: 900;
+    font-style: italic;
+    line-height: 1.1;
+    text-transform: uppercase;
+    color: #717171;
+    margin-bottom: 12px;
+
+    @include tablet-plus {
+      font-size: 22px;
+      padding: 0 94px 0 28px;
+      margin-bottom: 32px;
+    }
+  }
+
+  &__nav {
+    position: absolute;
+    top: 6px;
+    right: 16px;
+    display: flex;
+    align-items: center;
+  }
+}

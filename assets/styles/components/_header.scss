@@ -1,0 +1,45 @@
+.header {
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  padding: 8px 0;
+
+  @include tablet-plus {
+    padding: 16px 0;
+  }
+
+  @include laptop {
+    padding: 24px 0;
+  }
+
+  &__wrap {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    height: 75px;
+
+    @include laptop {
+      height: 110px;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: left;
+    }
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    padding-top: 16px;
+
+    @include laptop {
+      padding-top: 26px;
+    }
+  }
+}

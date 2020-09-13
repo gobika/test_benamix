@@ -1,0 +1,25 @@
+.socials {
+  display: flex;
+  align-items: center;
+}
+
+.social {
+  display: inline-block;
+  height: 16px;
+
+  &:not(:last-child) {
+    margin-right: 15px;
+  }
+
+  img {
+    height: 100%;
+    object-fit: contain;
+    transition: $transition;
+  }
+
+  &:hover {
+    img {
+      filter: invert(50);
+    }
+  }
+}

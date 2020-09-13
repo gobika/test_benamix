@@ -1,0 +1,51 @@
+@mixin h2($color: $c-text, $lh: 32px) {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: $lh;
+  color: $color;
+}
+
+@mixin h3($color: $c-text, $lh: normal) {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: $lh;
+  color: $color;
+
+  @include tablet-plus {
+    font-size: 40px;
+    line-height: 48px;
+  }
+}
+
+@mixin h4($color: $c-text, $lh: normal) {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  color: $color;
+}
+
+@mixin h5($color: $c-text, $lh: normal) {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: $lh;
+  color: $color;
+}
+
+@mixin text($lh: 16px, $color: $c-text, $fw: 500) {
+  font-weight: $fw;
+  font-size: 14px;
+  line-height: $lh;
+  color: $color;
+
+  @include tablet-plus {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@mixin genText($fs: 16px, $lh: normal, $fw: normal, $c: $c-text){
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh;
+  color: $c;
+}

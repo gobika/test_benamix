@@ -1,0 +1,56 @@
+/* Breakpoints */
+$fourK: 2560px;
+$desktop: 1920px;
+$laptop: 1280px;
+$tablet: 768px;
+$mobile: 320px;
+
+/* Grid */
+$grid-cols: 8 !default;
+$grid-gutter: 30px !default;
+$grid-row-cols: 6 !default;
+
+/* Containers max width*/
+$container-sm: 100%;
+$container-md: 93.75%;
+$container-lg: 69.3648%;
+$container-xl: 69.3648%;
+$container-xxl: 69.3648%;
+$container-p: $grid-gutter / 2;
+$container-p-lg: $grid-gutter / 2;
+$container-p-md: $grid-gutter / 2;
+$container-p-sm: 24px;
+
+/* Fonts */
+$font: 'Roboto', sans-serif;
+$letter-spacing: .2em;
+
+/* Colors */
+$c-blue: #26d2fc;
+$c-white: #ffffff;
+$c-black: #000000;
+$c-grey: #333333;
+$c-error: #e24602;
+$c-orange: #fb4d01;
+$c-yellow: #FCF321;
+$c-yellow-light: #FFF4D2;
+$c-offer: $c-error;
+$c-text: $c-grey;
+$c-silver: #e9e9e9;
+$c-light: #f8f8f8;
+
+/* Btns */
+$c-main: $c-yellow;
+$c-hover: lighten($c-yellow, 50%);
+$c-focus: darken($c-yellow,50%);
+$c-load: $c-focus;
+$c-disabled: rgba($c-main, .1);
+
+/* Shadow*/
+$c-shadow: rgba($c-main, .1);
+$shadow: 0px 4px 10px $c-shadow;
+
+/* Transitions */
+$timing: .5s;
+$ease: ease-in-out;
+$transition: all $timing $ease;

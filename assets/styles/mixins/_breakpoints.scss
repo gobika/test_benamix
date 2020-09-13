@@ -1,0 +1,59 @@
+@mixin fourK {
+  @media only screen and (min-width: $fourK) {
+    @content
+  }
+}
+
+@mixin desktop {
+  @media only screen and (min-width: $desktop) {
+    @content
+  }
+}
+
+@mixin laptop {
+  @media only screen and (min-width: $laptop) {
+    @content
+  }
+}
+
+@mixin tablet-plus {
+  @media only screen and (min-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media only screen and (max-width: $laptop - 1) {
+    @content
+  }
+}
+
+@mixin mobile {
+  @media only screen and (max-width: $tablet - 1) {
+    @content
+  }
+}
+
+@mixin media($min, $max) {
+  @media only screen and (min-width: $min) and (max-width: $max) {
+    @content
+  }
+}
+
+@mixin media-min($size) {
+  @media only screen and (min-width: $size) {
+    @content
+  }
+}
+
+@mixin media-max($size) {
+  @media only screen and (max-width: $size) {
+    @content
+  }
+}
+
+@function getSize($size, $index: 150, $format: px) {
+  $value: ($size / 100) * $index;
+  @return $value + $format;
+}
+

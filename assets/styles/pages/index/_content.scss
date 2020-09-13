@@ -1,0 +1,16 @@
+.content {
+  position: relative;
+  margin-top: -40px;
+  z-index: 3;
+
+  @include laptop  {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-column-gap: 30px;
+    margin-top: -20px;
+  }
+
+  .main {
+    background: $c-light;
+  }
+}
